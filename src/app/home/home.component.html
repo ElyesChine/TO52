@@ -1,0 +1,83 @@
+<head><title>Club sport</title></head>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- TODO common to many pages , just put it out and call it -->
+<mat-toolbar color="primary" >
+  <img src="https://img.icons8.com/cotton/2x/dumbbell.png" height="50" />
+  <span> Le Club Sportif de Belfort </span>
+  <!-- TODO change depending on session -->
+  <div class="alignRight" *ngIf="username.length===0;else nameOfUser">
+    <a mat-raised-button  href="userpage/" > Se connecter</a>
+  </div>
+  <ng-template class="alignRight" #nameOfUser>
+    <div class="alignRight">{{username}}</div>
+  </ng-template>
+</mat-toolbar>
+
+<div class="container">
+  <br>
+  <div class="row">
+    <div class="col-sm">
+      <mat-card>
+        <mat-card-title>
+          <img height="25px" width="25px" src="https://static6.depositphotos.com/1033002/570/v/950/depositphotos_5708604-stock-illustration-gymnastic.jpg" />
+          Tournoi de gymnastique
+          <br>
+          <mat-card-subtitle>17/04/2020 - Salle 2B</mat-card-subtitle>
+        </mat-card-title>
+        <mat-card-content>
+          Vous etes passioné par la gymnastique ?
+          <br> Rejoingnez ce tournoi !
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="col-sm">
+      <mat-card class="example-card" >
+        <mat-card-title>
+          <img height="25px" width="25px" src="data:image/jpeg;base64,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" />
+          Tournoi de boxe
+          <br>
+          <mat-card-subtitle>17/04/2020 - Salle 2C</mat-card-subtitle>
+        </mat-card-title>
+        <mat-card-content>
+          Vous etes passioné par le boxing ?
+          <br> Rejoingnez ce tournoi !
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="col-sm">
+      <mat-card class="example-card" >
+        <mat-card-title>
+          <img height="25px" width="25px" src="https://static6.depositphotos.com/1033002/570/v/950/depositphotos_5708604-stock-illustration-gymnastic.jpg" />
+          Tournoi de gymnastique
+          <br>
+          <mat-card-subtitle>27/04/2020 - Salle 2B</mat-card-subtitle>
+        </mat-card-title>
+        <mat-card-content>
+          Vous etes passioné par la gymnastique ?
+          <br> Rejoingnez ce tournoi !
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-sm">
+      <mat-card>
+        <mat-card-title>
+          <img height="25px" width="25px" src="https://i.pinimg.com/originals/56/db/16/56db16fafa8ce1b44c736c8919e46592.png" />
+          Tournoi de karaté
+          <br>
+          <mat-card-subtitle>27/04/2020 - Salle 2C</mat-card-subtitle>
+        </mat-card-title>
+        <mat-card-content>
+          Vous etes passioné par le Karaté ?
+          <br> Rejoingnez ce tournoi !
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="col-sm">
+    </div>
+    <div class="col-sm">
+    </div>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- TODO clean code -->
+  <div class="wrapper fadeInDown">
+    <div class="formContent">
+      <!-- Tabs Titles -->
+
+      <!-- Icon -->
+      <div class="fadeIn first">
+
+      </div>
+
+
+      <!-- Login Form -->
+      <form style="margin: 10%" [formGroup]="signinForm" (ngSubmit)="onSignIn(signinForm.value)">
+        <div style="color: grey; margin: 10px"> Connecter vous ! </div>
+
+          <input id="email"  class="fadeIn second"  placeholder="email" type="text"     formControlName="email" required>
+          <input type="password" id="password" class="fadeIn third" name="login" formControlName="password" placeholder="password" required>
+          <button mat-raised-button style="width: 80%;margin: 10px" color="primary" class="button" type="submit">Se connecter</button>
+
+      </form>
+
+      <!-- Remind Passowrd
+      <div id="formFooter">
+        <a class="underlineHover" href="#">Forgot Password?</a>
+      </div>
+      -->
+    </div>
+  </div>
